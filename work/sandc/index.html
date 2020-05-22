@@ -1,10 +1,13 @@
-{% capture content %}
+---
+title: S&C Electric Company
+layout: default
+---
 
 <main role="main" class="row">
 	<div class="col span_16">
 		<div class="title">
 			<h1 class="center">{{ current.title }}</h1>
-			<div class="description">{{ current.meta.description }}</div>
+			<div class="description">{{ current.page.description }}</div>
 		</div>
 		<p>
 			S&C Electric Company manufactures equipment vital to the American power grid. Maintaining this equipment traditionally requires the expertise of highly skilled engineers. Rather than rely exclusively on these experts, S&C partnered with Viget to design a new mobile app that empowers a broader base of electric company workers.
@@ -37,8 +40,4 @@
 	</div>
 </main>
 
-{% include 'includes/footer' %}
-
-{% endcapture %}
-
-{% include 'layouts/default' %}
+{% include footer.html %}
