@@ -2,14 +2,14 @@
 	<article class="col span_16">
 
 		{% if page.type == 'photo' %}
-			{{ page.content }}
+			{{ content }}
 		{% else %}
 
 			<h1>
 				<a href='{{ page.url }}'>{{ page.title }}</a>
 			</h1>
 
-			{{ page.content }}
+			{{ content }}
 
 		{% endif %}
 
