@@ -17,3 +17,8 @@ defaults:
     type: posts
   values:
     permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: "writing"
+  values:
+    layout: article
