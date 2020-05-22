@@ -1,8 +1,8 @@
 <main role="main" class="row">
 	<article class="col span_16">
 
-		{% if current.meta.type == 'photo' %}
-			{{ current.body }}
+		{% if current.page.type == 'photo' %}
+			{{ current.content }}
 		{% else %}
 
 			<h1>
