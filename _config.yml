@@ -39,4 +39,3 @@ defaults:
     type: work
   values:
     layout: article
-    permalink: "/work/:path/"
