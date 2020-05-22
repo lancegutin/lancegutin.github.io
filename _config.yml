@@ -37,3 +37,5 @@ defaults:
 - scope:
     path: ''
     type: work
+  values:
+    layout: default
