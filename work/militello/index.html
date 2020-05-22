@@ -1,10 +1,14 @@
+---
+layout: default
+---
+
 {% capture content %}
 
 <main role="main" class="row">
 	<div class="col span_16">
 		<div class="title">
-			<h1 class="center">{{ current.title }}</h1>
-			<div class="description">{{ current.meta.description }}</div>
+			<h1 class="center">{{ page.title }}</h1>
+			<div class="description">{{ page.description }}</div>
 		</div>
 		<p>
 			Militello Capital is a private equity investment firm. Their funds include both real estate and venture capital. To support core business functions and help transition to a fully digital operation, Militello worked with Viget to build the first version of Access, a custom Rails app to manage documents.
@@ -27,8 +31,6 @@
 	</div>
 </main>
 
-{% include 'includes/footer' %}
+{% include footer.html %}
 
 {% endcapture %}
-
-{% include 'layouts/default' %}
