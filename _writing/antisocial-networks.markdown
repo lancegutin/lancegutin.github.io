@@ -1,7 +1,7 @@
 ---
 title: Antisocial Networks
-layout: article
 date: 2010-07-08 17:39:00 Z
+layout: article
 ---
 
 A while back, a friend of mine introduced me to Craiglist’s [Missed Connections](http://washingtondc.craigslist.org/mis/). The [idea](http://en.wikipedia.org/wiki/Missed_connections) is quite simple, you see or interact with someone but have no way of contacting that person. On Craigslist, the missed connection pages manifest themselves as more or less personal ads to the effect “I saw you here, you were wearing this, I wish we could meet.” Because a successful post requires two individuals to separately log on and reference the same encounter, the chances of finding the person you missed seem slim. Yet, the whole idea floored me. Apparently, missed connections have been appearing on Craigslist since 2000 and I never once stumbled on it. 
