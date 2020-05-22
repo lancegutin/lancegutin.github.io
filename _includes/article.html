@@ -1,12 +1,12 @@
 <main role="main" class="row">
 	<article class="col span_16">
 
-		{% if page.type == 'photo' %}
+		{% if post.type == 'photo' %}
 			{{ content }}
 		{% else %}
 
 			<h1>
-				<a href='{{ page.url }}'>{{ page.title }}</a>
+				<a href='{{ post.url }}'>{{ post.title }}</a>
 			</h1>
 
 			{{ content }}
