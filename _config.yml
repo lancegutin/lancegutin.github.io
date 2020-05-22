@@ -11,6 +11,9 @@ collections:
   writing:
     title: Writing
     output: true
+  travel:
+    title: Travel
+    output: true
 defaults:
 - scope:
     path: ''
@@ -20,5 +23,10 @@ defaults:
 - scope:
     path: ''
     type: writing
+  values:
+    layout: article
+- scope:
+    path: ''
+    type: travel
   values:
     layout: article
