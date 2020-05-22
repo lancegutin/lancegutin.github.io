@@ -9,9 +9,9 @@ collections:
     title: Uploads
     output: true
   writing:
-    layout: article
     title: Writing
     output: true
+    layout: article
 defaults:
 - scope:
     path: ''
