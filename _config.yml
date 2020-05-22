@@ -38,3 +38,4 @@ defaults:
     type: work
   values:
     layout: article
+    permalink: "/:title/"
