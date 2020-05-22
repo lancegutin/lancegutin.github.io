@@ -1,13 +1,3 @@
-{% if parent.page.title != 'UrbanStems' %}
-
   <footer class="row">
   	<a href="{{ parent.page.url }}">{{ parent.page.title }}</a>
   </footer>
-
-{% else %}
-
-  <footer class="row">
-    <a href="{{ parent.parent.page.url }}">{{ parent.parent.page.title }}</a>
-  </footer>
-
-{% endif %}
