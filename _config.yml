@@ -35,7 +35,7 @@ defaults:
   values:
     layout: article
 - scope:
-    path: work
+    path: ''
     type: work
   values:
     layout: article
