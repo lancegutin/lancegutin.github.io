@@ -30,3 +30,8 @@ defaults:
     type: travel
   values:
     layout: article
+- scope:
+    path: ''
+    type: work
+  values:
+    layout: article
