@@ -11,8 +11,6 @@ collections:
   writing:
     title: Writing
     output: true
-    values:
-      layout: article
 defaults:
 - scope:
     path: ''
