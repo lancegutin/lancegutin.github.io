@@ -11,9 +11,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-  work:
-    title: Work
-    output: true
   writing:
     title: Writing
     output: true
@@ -33,9 +30,3 @@ defaults:
     type: travel
   values:
     layout: article
-- scope:
-    path: ''
-    type: work
-  values:
-    layout: article
-    permalink: "/work/:title/"
