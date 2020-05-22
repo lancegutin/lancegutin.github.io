@@ -1,17 +1,11 @@
 <main role="main" class="row">
 	<article class="col span_16">
 
-		{% if page.type == 'photo' %}
-			{{ content }}
-		{% else %}
-
 			<h1>
 				<a href='{{ page.url }}'>{{ page.title }}</a>
 			</h1>
 
 			{{ content }}
-
-		{% endif %}
 
 	</article>
 </main>
