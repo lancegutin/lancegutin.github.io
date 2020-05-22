@@ -5,14 +5,14 @@ collections:
   posts:
     title: Posts
     output: true
+  travel:
+    title: Travel
+    output: true
   uploads:
     title: Uploads
     output: true
   writing:
     title: Writing
-    output: true
-  travel:
-    title: Travel
     output: true
 defaults:
 - scope:
