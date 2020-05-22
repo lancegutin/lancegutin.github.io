@@ -14,6 +14,7 @@ collections:
   work:
     title: Work
     output: true
+    permalink: "/work/:path/"
   writing:
     title: Writing
     output: true
@@ -34,7 +35,7 @@ defaults:
   values:
     layout: article
 - scope:
-    path: "work"
+    path: ''
     type: work
   values:
     layout: article
