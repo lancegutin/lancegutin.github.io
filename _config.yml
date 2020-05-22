@@ -38,4 +38,4 @@ defaults:
     type: work
   values:
     layout: article
-    permalink: "/:dir/:title/"
+    permalink: "/:categories/:title/"
