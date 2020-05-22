@@ -11,7 +11,8 @@ collections:
   writing:
     title: Writing
     output: true
-    layout: article
+    values:
+      layout: "article"
 defaults:
 - scope:
     path: ''
