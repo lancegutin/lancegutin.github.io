@@ -1,5 +1,6 @@
 ---
 title: Antisocial Networks
+layout: article
 date: 2010-07-08 17:39:00 Z
 ---
 
