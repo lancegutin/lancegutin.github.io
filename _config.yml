@@ -9,6 +9,7 @@ collections:
     title: Uploads
     output: true
   writing:
+    layout: article
     title: Writing
     output: true
 defaults:
