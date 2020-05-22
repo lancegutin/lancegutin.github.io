@@ -12,7 +12,7 @@ collections:
     title: Writing
     output: true
     values:
-      layout: "article"
+      layout: article
 defaults:
 - scope:
     path: ''
