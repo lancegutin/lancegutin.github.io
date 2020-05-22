@@ -1,15 +1,15 @@
 <main role="main" class="row">
 	<article class="col span_16">
 
-		{% if current.page.type == 'photo' %}
-			{{ current.content }}
+		{% if article.type == 'photo' %}
+			{{ content }}
 		{% else %}
 
 			<h1>
-				<a href='{{ current.page.url }}'>{{ current.page.title }}</a>
+				<a href='{{ article.url }}'>{{ article.title }}</a>
 			</h1>
 
-			{{ current.content }}
+			{{ content }}
 
 		{% endif %}
 
