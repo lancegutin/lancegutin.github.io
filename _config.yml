@@ -14,7 +14,7 @@ collections:
   work:
     title: Work
     output: true
-    permalink: "/work/:path/"
+    permalink: "/work/:title/"
   writing:
     title: Writing
     output: true
