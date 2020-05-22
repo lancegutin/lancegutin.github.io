@@ -38,4 +38,4 @@ defaults:
     path: ''
     type: work
   values:
-    layout: default
+    layout: article
