@@ -52,7 +52,7 @@ layout: default
 
 
 {% for work in site.pages %}
-   {% if work.path contains 'work' %}
+   {% if work.path contains 'work' and work.title != 'Work' %}
     {% if work.title != 'UrbanStems' %}
 
       <div class="index">
