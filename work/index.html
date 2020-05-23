@@ -5,14 +5,14 @@ layout: default
 
 <main role="main" class="row">
 
-{% for work in site.work %}
+{% for work in site.pages %}
   {% if work.title == 'UrbanStems' %}
 
     <div class="index">
 
       <div class="title">
         <h1 class="center">
-          <a href="http://www.lancegutin.com/work/urbanstems/case-study">{{ work.title }}</a>
+          <a href="urbanstems/case-study">{{ work.title }}</a>
         </h1>
         <div class="description">
           {{ work.description }}
@@ -24,7 +24,7 @@ layout: default
           Creating a flower subscription service and establishing a new revenue stream in the process.
         </p>
         <div class="description">
-          <a href="http://www.lancegutin.com/work/urbanstems/case-study">See Case Study</a>
+          <a href="urbanstems/case-study">See Case Study</a>
         </div>
       </div>
 
@@ -33,7 +33,7 @@ layout: default
           Prototyping a new storefront search and filter experience.
         </p>
         <div class="description">
-          <a href="http://www.lancegutin.com/work/urbanstems/concept">See Concept</a>
+          <a href="urbanstems/concept">See Concept</a>
         </div>
       <div>
 
