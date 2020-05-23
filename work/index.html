@@ -6,47 +6,49 @@ layout: default
 <main role="main" class="row">
 
 {% for work in site.pages %}
-  {% if work.title == 'UrbanStems' %}
-
-    <div class="index">
-
-      <div class="title">
-        <h1 class="center">
-          <a href="urbanstems/case-study">{{ work.title }}</a>
-        </h1>
-        <div class="description">
-          {{ work.description }}
-        </div>
-      </div>
+  {% if work.path contains 'work' and work.title != 'Work' %}
+    {% if work.title == 'UrbanStems' %}
 
       <div class="index">
-        <p class="center">
-          Creating a flower subscription service and establishing a new revenue stream in the process.
-        </p>
+
+        <div class="title">
+          <h1 class="center">
+            <a href="urbanstems/case-study">{{ work.title }}</a>
+          </h1>
+          <div class="description">
+            {{ work.description }}
+          </div>
+        </div>
+
+        <div class="index">
+          <p class="center">
+            Creating a flower subscription service and establishing a new revenue stream in the process.
+          </p>
+          <div class="description">
+            <a href="urbanstems/case-study">See Case Study</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="center">
+            Prototyping a new storefront search and filter experience.
+          </p>
+          <div class="description">
+            <a href="urbanstems/concept">See Concept</a>
+          </div>
+        <div>
+
+      </div>
+
+      <hr class="alt" />
+
+      <div class="secondary-index">
         <div class="description">
-          <a href="urbanstems/case-study">See Case Study</a>
+          Client Work
         </div>
       </div>
 
-      <div>
-        <p class="center">
-          Prototyping a new storefront search and filter experience.
-        </p>
-        <div class="description">
-          <a href="urbanstems/concept">See Concept</a>
-        </div>
-      <div>
-
-    </div>
-
-    <hr class="alt" />
-
-  <div class="secondary-index">
-    <div class="description">
-      Client Work
-    </div>
-  </div>
-
+    {% endif %}
   {% endif %}
 {% endfor %}
 
