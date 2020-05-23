@@ -1,10 +1,17 @@
-{% capture content %}
+---
+title: UrbanStems
+date: 2018-05-21 15:59:00 -04:00
+permalink: "/urbanstems/concept/"
+author: Lance Gutin
+description: Product Designer
+layout: default
+---
 
 <main role="main" class="row">
 	<div class="col span_16">
 		<div class="title">
-			<h1 class="center">{{ current.parent.title }}</h1>
-			<div class="description">{{ current.title }}</div>
+			<h1 class="center">{{ page.title }}</h1>
+			<div class="description">Concept</div>
 		</div>
 		<img class="border" src="/assets/urbanstems-storefront.png" alt="Legacy storefront">
 		<h4>Product availability on the UrbanStems storefront varies with delivery location and date.</h4>
@@ -26,8 +33,6 @@
 	</div>
 </main>
 
-{% include 'includes/footer' %}
-
-{% endcapture %}
-
-{% include 'layouts/default' %}
+<footer class="row">
+  <a href="../../">Work</a>
+</footer>

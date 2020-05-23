@@ -1,10 +1,17 @@
-{% capture content %}
+---
+title: UrbanStems
+date: 2018-05-21 15:59:00 -04:00
+permalink: "/urbanstems/case-study/"
+author: Lance Gutin
+description: Product Designer
+layout: default
+---
 
 <main role="main" class="row">
 	<div class="col span_16">
 		<div class="title">
-			<h1 class="center">{{ current.parent.title }}</h1>
-			<div class="description">{{ current.title }}</div>
+			<h1 class="center">{{ page.title }}</h1>
+			<div class="description">Case Study</div>
 		</div>
 		<p>
 			UrbanStems is a startup intent on uprooting the multi-billion dollar flower industry. Unlike traditional online flower retailers, UrbanStems is vertically integrated. Bouquets are arranged at the farm, shipped to distribution centers, and delivered to recipients within hours of the order.
@@ -99,8 +106,6 @@
 	</div>
 </main>
 
-{% include 'includes/footer' %}
-
-{% endcapture %}
-
-{% include 'layouts/default' %}
+<footer class="row">
+  <a href="../../">Work</a>
+</footer>
