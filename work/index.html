@@ -53,12 +53,10 @@ layout: default
 
 {% for work in site.work %}
   {% if work.title != 'UrbanStems' %}
-
-        {% assign directory = work.dir %}
         
     <div class="index">
       <h1 class="center">
-        <a href='{{ work.url }}'>{{ work.title }}</a>{{ "work/" | append: directory }}
+        <a href='{{ work.url }}'>{{ work.title }}</a>{{ work.path }}{ work.category }}
       </h1>
       <div class="description">
         {{ work.description }}
