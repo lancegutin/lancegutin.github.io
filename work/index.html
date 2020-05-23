@@ -56,7 +56,7 @@ layout: default
 
     <div class="index">
       <h1 class="center">
-        <a href='{{ work.url }}'>{{ work.title }}</a>{{ work.slug }}
+        <a href='{{ work.url }}'>{{ work.title }}</a>{{ work.dir | prepend: "work/" }}
       </h1>
       <div class="description">
         {{ work.description }}
