@@ -35,7 +35,7 @@ defaults:
   values:
     layout: article
 - scope:
-    path: _work
+    path: "/_work/"
     type: work
   values:
     layout: default
