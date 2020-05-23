@@ -52,16 +52,18 @@ layout: default
 
 
 {% for work in site.work %}
+  {% if work.title != 'UrbanStems' %}
 
     <div class="index">
       <h1 class="center">
-        <a href='{{ work.page.url }}'>{{ work.title }}</a>
+        <a href='{{ work.title }}'>{{ work.title }}</a>
       </h1>
       <div class="description">
         {{ work.description }}
       </div>
     </div>
-
+          
+  {% endif %}
 {% endfor %}
 
 
