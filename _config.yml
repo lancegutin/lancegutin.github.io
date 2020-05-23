@@ -38,6 +38,7 @@ defaults:
     type: work
   values:
     layout: default
+    permalink: "/work/:path/"
 permalink: pretty
 markdown: kramdown
 analytics_id: UA-17044912-3
