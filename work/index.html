@@ -51,13 +51,13 @@ layout: default
 {% endfor %}
 
 
-{% for work in site.pages %}
+{% for work in site.pages reversed %}
    {% if work.path contains 'work' and work.title != 'Work' %}
     {% if work.title != 'UrbanStems' %}
 
       <div class="index">
         <h1 class="center">
-          <a href='{{ work.url }}'>{{ work.title }}</a>•{{ work.url }}•{{ work.path }}{{ page.url }}
+          <a href='{{ work.url }}'>{{ work.title }}</a>
         </h1>
         <div class="description">
           {{ work.description }}
