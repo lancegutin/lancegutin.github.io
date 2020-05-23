@@ -1,6 +1,10 @@
 ---
 title: Lance Gutin
-timezone: UTC
+timezone: Eastern Time (US & Canada)
+permalink: pretty
+markdown: kramdown
+analytics_id: UA-17044912-3
+description: Designer
 collections:
   posts:
     title: Posts
@@ -35,7 +39,7 @@ defaults:
   values:
     layout: article
 - scope:
-    path: ''
+    path: '_work'
     type: work
   values:
     layout: default
