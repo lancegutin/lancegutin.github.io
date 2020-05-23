@@ -1,7 +1,6 @@
 ---
 title: Work
 layout: default
-permalink: "/work/:title/"
 ---
 
 <main role="main" class="row">
@@ -57,7 +56,7 @@ permalink: "/work/:title/"
 
     <div class="index">
       <h1 class="center">
-        <a href='{{ work.url }}'>{{ work.title }}</a>
+        <a href='{{ work.page.url }}'>{{ work.page.title }}</a>
       </h1>
       <div class="description">
         {{ work.description }}
