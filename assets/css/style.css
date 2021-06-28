@@ -447,6 +447,16 @@ nav a:link {
   overflow: hidden;
 }
 
+.image-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-set img {
+  max-width: 460px;
+}
+
 ::-moz-selection, ::selection {
   background: #1769FF;
   color: #FFFFFF;
@@ -478,6 +488,10 @@ nav a:link {
 
   .container {
     padding: 0 20px;
+  }
+
+  .image-set img {
+    max-width: 100%;
   }
 }
 
