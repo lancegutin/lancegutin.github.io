@@ -8,6 +8,27 @@ layout: default
   <div class="index">
     <div class="title">
       <h1 class="center">
+        <a href="adp.html">ADP</a>
+      </h1>
+      <div class="description">
+        Senior UX Designer
+      </div>
+    </div>
+
+    <div class="index">
+      <p class="center">
+        Designing a unified and extensible system for payroll. 
+      </p>
+      <div class="description">
+        <a href="adp.html">See Case Study</a>
+      </div>
+    </div>
+
+<hr class="alt" />
+
+  <div class="index">
+    <div class="title">
+      <h1 class="center">
         <a href="urbanstems/case-study">UrbanStems</a>
       </h1>
       <div class="description">
@@ -44,7 +65,7 @@ layout: default
 
 {% for work in site.pages reversed %}
  {% if work.path contains 'work' and work.title != 'Work' %}
-  {% if work.title != 'UrbanStems' %}
+  {% if work.title != 'UrbanStems' and work.title != 'ADP' %}
 
     <div class="index">
       <h1 class="center">
