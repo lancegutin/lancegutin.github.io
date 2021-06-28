@@ -457,6 +457,10 @@ nav a:link {
   max-width: 460px;
 }
 
+.image-set h4 {
+  max-width: 460px;
+}
+
 ::-moz-selection, ::selection {
   background: #1769FF;
   color: #FFFFFF;
@@ -491,6 +495,10 @@ nav a:link {
   }
 
   .image-set img {
+    max-width: 100%;
+  }
+
+  .image-set h4 {
     max-width: 100%;
   }
 }
