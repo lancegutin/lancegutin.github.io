@@ -17,19 +17,19 @@ layout: default
 			Payroll is traditionally processed on a schedule; companies pay their employees weekly, biweekly, or on some other regular interval. When an employee abruptly resigns or management wants to give everyone a holiday bonus, payroll practitioners typically use an off-cycle. Off-cycles are so called because they occur outside the normal schedule or cycle of regular payroll.
 		</p>
 		<p>
-			For Lifion, the next generation HCM product from ADP, the ability to process both types of payroll – regular and off-cycle – was cumbersome and immature. Of primary concern, the only way to pay many employees the same holiday bonus was do it one by one in a wildly inefficient procedure. Secondly, the experience of working with an off-cycle was entirely different than that of regular payroll. And lastly, both types of payroll utilized a slow and brittle legacy payroll engine to do the actual calculations. Moving forward, payroll needed to be flexible by supporting a new modern payroll engine in addition to the legacy engine.
+			For Lifion, the next generation HCM product from ADP, the ability to process both types of payroll — regular and off-cycle — was cumbersome and immature. Of primary concern, the only way to pay many employees the same holiday bonus was do it one by one in a wildly inefficient procedure. Secondly, the experience of working with an off-cycle was entirely different than that of regular payroll. And lastly, both types of payroll utilized a slow and brittle legacy payroll engine to do the actual calculations. Moving forward, payroll needed to be flexible by supporting a new modern payroll engine in addition to the legacy engine.
 		</p>
 		<p>
 			As the primary designer on the core payroll team, I worked alongside a senior product owner to define these challenges and then model and design a path forward. Ultimately, I collaborated with several engineering teams in an agile environment to implement our approach over the course of several months.
 		</p>
 		<h2>Modeling a Path Forward</h2>
 		<p>
-			Initially, the project was framed around addressing the most immediate and painful shortcoming within payroll – the inability to use an off-cycle to pay many employees at once. Hoping to achieve further clarity, I brought together payroll designers and product owners for a <a href="https://www.atlassian.com/team-playbook/plays/problem-framing">problem framing workshop</a>.
+			Initially, the project was framed around addressing the most immediate and painful shortcoming within payroll — the inability to use an off-cycle to pay many employees at once. Hoping to achieve further clarity, I brought together payroll designers and product owners for a <a href="https://www.atlassian.com/team-playbook/plays/problem-framing">problem framing workshop</a>.
 		</p>
 		<p>
 			From the workshop, it became clear that there was a broader opportunity to address more fundamental issues in payroll. Specifically, we could design a unified system to handle both off-cycles and regular payroll as well as integrate both modern and legacy payroll engines.
 		</p>
-		<img src="/assets/adp-model.png" alt="Unified payroll model">
+		<img class="border" src="/assets/adp-model.png" alt="Unified payroll model">
 		<h4>Model suggesting similar processes for regular and off-cycle payrolls.</h4>
 		<p>
 			By organizing these ideas into a model, I sought to illustrate how regular payroll was functionally similar to an off-cycle. I hypothesized that we could deliver a consistent and more intuitive experience to payroll practitioners and that it would be easier to maintain and extend as the product grew.
@@ -43,9 +43,9 @@ layout: default
 		<p>
 			Throughout much of the product, navigation is generally thought of as a mix of horizontal and vertical tabs. This, however, has its drawbacks. Vertical tabs, for example, narrow the main content area thereby limiting the data visible in a table. To address this, I explored several alternatives, including a concept where tabs or views could be selected from a dedicated modal. With this approach, tables could be wider and payroll practitioners could search from an expanded list of views and descriptions. 
 		</p>
-		<img src="/assets/adp-nav.png">
-		<h4>Selecting Change view opens a dedicated modal.</h4>
-		<img src="/assets/adp-nav-modal.png">
+		<img src="/assets/adp-nav.png" alt="Earnings index">
+		<h4>Selecting change view opens a dedicated modal.</h4>
+		<img src="/assets/adp-nav-modal.png" alt="Change view modal">
 		<h4>View descriptions help clarify complex terms.</h4>
 		<p>
 			During remote moderated testing, payroll practitioners responded positively to this concept and were better able to distinguish between similar views. However, due to development constraints, we ultimately moved forward with the more traditional tabbed approach. 
@@ -57,7 +57,9 @@ layout: default
 		<p>
 			Recognizing this, custom sections were more appropriate for the Run Payroll index screen. Prominence was given to important amounts like employee count and pay date as well as values like gross pay and net pay which made choosing and comparing payrolls easier.
 		</p>
-		...image...
+		</h4>
+		<img src="/assets/adp-home.png" alt="Run payroll index">
+		<h4>Payroll practitioners can either access an existing payroll or start a new one.</h4>
 		<p>
 			Deeper within the experience, spreadsheet-like tables made more sense, particularly for cases that required searching, filtering, and editing data. To accommodate space constraints, summary tables linked to detailed tables, providing a more robust view when needed.
 		</p>
@@ -65,23 +67,34 @@ layout: default
 		<p>
 			In the final designs, special attention was devoted to transparency, flexibility, and extensibility. This primarily meant including metric tiles — blocks with totals — in multiple locations based on context and feasibility. While basic in their execution, metric tiles address issues of scale, allowing payroll practitioner to quickly assess magnitudes and confirm accuracy. Metric tiles can also be extended to accommodate a broad range of summary data and interactions. Similarly, tooltips and hover states were critical to providing more detailed information without over complicating the design.
 		</p>
-		...image...
+		</h4>
+		<img src="/assets/adp-legacy-engine.png" alt="Off-cycle payroll using the legacy payroll engine">
+		<h4>For payrolls using the legacy payroll engine, metrics were shown on each tab based on what was available.</h4>
+		</h4>
+		<img src="/assets/adp-modern-engine.png" alt="Off-cycle payroll using the modern payroll engine">
+		<h4>For payrolls using the modern payroll engine, metrics were shown in the header as totals were available immediately.</h4>
+		</h4>
+		<img src="/assets/adp-interactions.png" alt="***">
+		<h4>***</h4>
+		</h4>
+		<img src="/assets/adp-detail-modal.png" alt="***">
+		<h4>***</h4>
 		<p>
 			In the end, I collaborated closely with multiple engineering teams to realize this unified approach to payroll. In 2020, our efforts in payroll were recognized as a "Top HR Product" by the HR Technology Conference, and we continue to build upon our original foundation.
 		</p>
 		<h2>Looking Back</h2>
 		<p>
-			Framing is essential. In my experience, product success — does the product address real needs and will it be used as intended — hinges on how it's framed. In this case, the project was pitched narrowly, focusing on obvious pain points and near term benefits. Accepting this outright would have yielded a solution likely to fall apart as priorities shifted. Instead, spending time upfront with the right people, reflecting on the bigger picture, and ensuring that we really understood each other was crucial to producing something of long term value.
+			<em>Framing is essential.</em> In my experience, product success — does the product address real needs and will it be used as intended — hinges on how it's framed. In this case, the project was pitched narrowly, focusing on obvious pain points and near term benefits. Accepting this outright would have yielded a solution likely to fall apart as priorities shifted. Instead, spending time upfront with the right people, reflecting on the bigger picture, and ensuring that we really understood each other was crucial to producing something of long term value.
 		</p>
 		<p>
-			Focus on structure. In fast paced environments, designers are often expected to focus on the interface and turn around usable solutions quickly. For this project, given its size and complexity, that would have been a mistake. Developing a model and solidifying things like navigation and layout first allowed us to move forward while also accommodating uncertainty. Decisions as to what fields to capture or columns to show could shift without dramatically impacting the overall design.
+			<em>Focus on structure.</em> In fast paced environments, designers are often expected to focus on the interface and turn around usable solutions quickly. For this project, given its size and complexity, that would have been a mistake. Developing a model and solidifying things like navigation and layout first allowed us to move forward while also accommodating uncertainty. Decisions as to what fields to capture or columns to show could shift without dramatically impacting the overall design.
 		</p>
 		<p>
-			Challenge constraints. The more time you spend with a product or design system, the more you consciously and unconsciously conform to constraints as they're perceived. That said, constraints are meant to be challenged. Exploring multiple directions, some feasible, some not, created a sense of excitement, a culture of innovation necessary to build something new in a complex space.
+			<em>Challenge constraints.</em> The more time you spend with a product or design system, the more you consciously and unconsciously conform to constraints as they're perceived. That said, constraints are meant to be challenged. Exploring multiple directions, some feasible, some not, created a sense of excitement, a culture of innovation necessary to build something new in a complex space.
 		</p>
 	</div>
 </main>
 
 <footer class="row">
-  <a href="../../">Work</a>
+  <a href="../">Work</a>
 </footer>
