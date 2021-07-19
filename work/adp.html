@@ -20,7 +20,7 @@ layout: default
 			For Lifion, the next generation <a href="https://en.wikipedia.org/wiki/Human_capital_management">HCM</a> product from ADP, the ability to process both types of payroll — regular and off-cycle — was cumbersome and immature. Of primary concern, the only way to pay many employees the same holiday bonus was do it one by one in a wildly inefficient procedure. Secondly, the experience of working with an off-cycle was entirely different than that of regular payroll. And lastly, both types of payroll utilized a slow and brittle legacy payroll engine to do the actual calculations. Moving forward, payroll needed to be flexible by supporting a new modern payroll engine in addition to the legacy engine.
 		</p>
 		<p>
-			As the primary designer on the core payroll team, I worked alongside a senior product owner to define these challenges and then model and design a path forward. Ultimately, I collaborated with several engineering teams in an agile environment to implement our approach over the course of several months.
+			As the primary designer on the core payroll team, I worked alongside a senior product owner to define these challenges and then model and design a path forward. Ultimately, I collaborated with several engineering teams in an agile environment over the course of several months to implement our approach.
 		</p>
 		<h2>Modeling a Path Forward</h2>
 		<p>
@@ -32,7 +32,7 @@ layout: default
 		<img src="/assets/adp-model.png" alt="Unified payroll model">
 		<h4>Model suggesting similar processes for regular and off-cycle payrolls.</h4>
 		<p>
-			By organizing these ideas into a model, I sought to illustrate how regular payroll was functionally similar to an off-cycle. I hypothesized that we could deliver a consistent and more intuitive experience to payroll practitioners and that it would be easier to maintain and extend as the product grew.
+			By organizing these ideas into a model, I sought to illustrate how a regular payroll was functionally similar to an off-cycle. I hypothesized that we could deliver a consistent and more intuitive experience to payroll practitioners and that it would be easier to maintain and extend as the product grew.
 		</p>
 		<h2>Designing Structure</h2>
 		<p>
@@ -61,7 +61,7 @@ layout: default
 			Tables and filters are everywhere in payroll. They are an efficient means of manipulating large amounts of data, not to mention payroll practitioners essentially live in Excel. That said, because every cell is treated uniformly, tables often fail to convey hierarchy.
 		</p>
 		<p>
-			Recognizing this, custom sections were more appropriate for the Run Payroll index screen. Prominence was given to important amounts like employee count and pay date as well as values like gross pay and net pay which made choosing and comparing payrolls easier.
+			Recognizing this, custom sections were more appropriate for the <em>Run payroll</em> index screen. Prominence was given to important amounts like employee count and pay date as well as values like gross pay and net pay which made choosing and comparing payrolls easier.
 		</p>
 		</h4>
 		<img src="/assets/adp-index.png" alt="Run payroll index">
@@ -71,12 +71,12 @@ layout: default
 		</p>
 		<h2>Repeating Patterns</h2>
 		<p>
-			In the final designs, special attention was devoted to transparency, flexibility, and extensibility. This primarily meant including metric tiles — blocks with totals — in multiple locations based on context and feasibility. While basic in their execution, metric tiles address issues of scale, allowing payroll practitioner to quickly assess magnitudes and confirm accuracy. Metric tiles could also be extended to accommodate a broad range of summary data and interactions. Similarly, tooltips and hover states were critical to providing more detailed information without over complicating the design.
+			In the final designs, special attention was devoted to transparency, flexibility, and extensibility. This primarily meant including metric tiles — blocks with totals — in multiple locations based on context and feasibility. While basic in their execution, metric tiles address issues of scale, allowing payroll practitioner to quickly assess magnitudes and confirm accuracy. Metric tiles could also be extended to accommodate a broad range of summary data and interactions. Similarly, tooltips and interactive panels were critical to providing more detailed information without over complicating the design.
 		</p>
 		<div class="image-set">
 			<div>
 				<img src="/assets/adp-legacy-engine.png" alt="Off-cycle payroll using the legacy payroll engine">
-				<h4>For payrolls using the legacy payroll engine, metrics were shown on each tab based on what was available.</h4>
+				<h4>For payrolls using the legacy payroll engine, metrics were shown on each tab based on available data.</h4>
 			</div>
 			<div>
 				<img src="/assets/adp-modern-engine.png" alt="Off-cycle payroll using the modern payroll engine">
