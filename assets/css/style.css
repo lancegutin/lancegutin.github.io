@@ -319,7 +319,8 @@ footer a {
   width: 40px;
 }
 
-svg { 
+svg {
+  display: block;
   margin: 0 auto; 
   overflow: hidden;
 }
