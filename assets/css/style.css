@@ -298,13 +298,31 @@ footer a {
 }
 
 #logo {
-	margin-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 #logo img {
-	display: block;
-	height: 3.75rem;
-	margin: 0 auto;
+  display: block;
+  height: 3.75rem;
+  margin: 0 auto;
+}
+
+#wave {
+  stroke-dasharray: 0 16 101 16;
+  animation: moveTheWave 7200ms linear infinite;  
+}
+
+.wave-container {
+  align-items: center;
+  display: flex;
+  height: 110px;
+  margin: 0 auto;
+  width: 110px;
+}
+
+svg { 
+  margin: 0 auto; 
+  overflow: hidden;
 }
 
 nav {
@@ -469,6 +487,17 @@ nav a:link {
 ::selection {
   background: #1769FF;
   color: #FFFFFF;
+}
+
+@keyframes moveTheWave {
+  0% { 
+    stroke-dashoffset: 0; 
+    transform: translate3d(0, 0, 0);
+  }
+  100% { 
+    stroke-dashoffset: -133;
+    transform: translate3d(-90px, 0, 0);
+  }
 }
 
 @media ( max-width : 980px ) {
