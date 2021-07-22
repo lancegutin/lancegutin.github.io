@@ -180,27 +180,27 @@ hr.alt:before {
 }
 
 sup {
-	line-height: 0;
-	vertical-align: super;
-	font-size: 0.875rem;
-	padding-left: 0.125rem;
+  line-height: 0;
+  vertical-align: super;
+  font-size: 0.875rem;
+  padding-left: 0.125rem;
 }
 
 sub {
-	line-height: 0;
-	vertical-align: sub;
-	font-size: 0.875rem;
+  line-height: 0;
+  vertical-align: sub;
+  font-size: 0.875rem;
 }
 
 .footnotes {
-	font-size: 0.875rem;
-	color: #666;
+  font-size: 0.875rem;
+  color: #666;
   max-width: 720px;
   margin: 0 auto;
 }
 
 .footnotes ol {
-	padding-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .footnotes:before {
@@ -315,9 +315,8 @@ footer a {
 .wave-container {
   align-items: center;
   display: flex;
-  height: 3.75rem;
   margin: 0 auto 2.25rem auto;
-  width: 3.75rem;
+  width: 40px;
 }
 
 svg { 
