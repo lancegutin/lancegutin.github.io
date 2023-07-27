@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Lance Gutin - Where Do Ideas Come From?</title>
+
+    <meta name='description' content='Designer'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/favicon.png'>
+
+    <link type="application/rss+xml" rel="alternate" title="Lance Gutin" href="">
+
+    <link href="/assets/css/style.css" rel="stylesheet" media="all">
+    <!-- <link rel="stylesheet" href="http://basehold.it/24/666666"> -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700, 400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <script src="/assets/js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.collapsed').click(function(){
+          $(this).siblings('.expand-box').hide();
+          $(this).siblings('.expanded').show();
+          $(this).hide();
+        });
+        $('.expand-box').click(function(){
+          $(this).hide();
+          $(this).siblings('.expanded').show();
+          $(this).siblings('.collapsed').hide();
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      const path = document.querySelector('#wave');
+      const animation = document.querySelector('#moveTheWave');
+      const m = 0.512286623256592433;
+
+      function buildWave(w, h) {
+
+        const a = h / 4;
+        const y = h / 2;
+
+        const pathData = [
+          'M', w * 0, y + a / 2, 
+          'c', 
+            a * m, 0,
+            -(1 - a) * m, -a, 
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a
+        ].join(' ');
+
+        path.setAttribute('d', pathData);
+      }
+
+      buildWave(90, 60);
+    </script>
+
+    <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_setDomainName', '']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+
+  <body>
+    <div class="container row">
+      <header role="banner" class="row">      
+        
+<!-- 
+        <div id="logo">
+          <a href="/"><img src="/assets/logo.svg"></a>
+        </div>
+-->
+        
+        <div class="wave-container">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="30px" viewBox="5 0 80 60">
+              <path id="wave" 
+                fill="none" 
+                stroke="#666" 
+                stroke-width="3"
+                stroke-linecap="round">
+              </path>
+            </svg>
+          </a>
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href='/about'>About</a></li>
+            <li><a href='/design'>Design</a></li>
+            <li><a href='/travel'>Travel</a></li>
+          </ul>
+        </nav>
+
+      </header>
+
+      <main role="main" class="row">
+	<article class="col span_16">
+
+		
+
+			<h1>
+				<a href='/design/writing/ideas'>Where Do Ideas Come From?</a>
+			</h1>
+
+			<p>In a recent blog entry, Seth Godin tackled the eternal question <a href="http://sethgodin.typepad.com/seths_blog/2010/11/where-do-ideas-come-from.html">where do ideas come from?</a> In his 20 item list, Godin touches on themes such as beginner’s mind, self-awareness, and necessity that he believes facilitate new ideas. Overall, a quality list.</p>
+
+<p>However, based on my own experiences, I wish to add to the list. No. 21 should read: Ideas come from mistakes and misconceptions. See, I have this really cool design blog I read at <a href="http://www.notcot.org/">notcot.org</a>. It’s a great source of community driven design inspiration. The site is basically a bulletin board of cool stuff from all over the web. Because each post is simply an image with small caption, sometimes at first glance you don’t know what you’re looking at. And, that to me, is the best part. Inevitably, your brain will make a conclusion as to what each image is. Most cases what you think you see matches the caption. Other times, you make a mistake and believe the image to be something completely different. And sometimes that mistake, that something else, is actually a great idea.</p>
+
+<p>No. 22 should read: Ideas come from the combination of two completely unrelated ideas. I don’t have much to support this, but I firmly believe that if you take principles, concepts, rules, etc. (ideas) specific to one area of life and apply them to a completely disparate area or problem, you may be surprised by what you find.</p>
+
+<p>Now, whether or not a great idea is all you need for a super successful business is another story.</p>
+
+
+		
+
+	</article>
+</main>
+
+
+
+	<footer class="row">
+	  <a href="../">Design</a>
+	</footer>
+
+
+
+
+
+
+
+    </div>
+  </body>
+</html>

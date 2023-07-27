@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Lance Gutin - Words Matter</title>
+
+    <meta name='description' content='Designer'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/favicon.png'>
+
+    <link type="application/rss+xml" rel="alternate" title="Lance Gutin" href="">
+
+    <link href="/assets/css/style.css" rel="stylesheet" media="all">
+    <!-- <link rel="stylesheet" href="http://basehold.it/24/666666"> -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700, 400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <script src="/assets/js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.collapsed').click(function(){
+          $(this).siblings('.expand-box').hide();
+          $(this).siblings('.expanded').show();
+          $(this).hide();
+        });
+        $('.expand-box').click(function(){
+          $(this).hide();
+          $(this).siblings('.expanded').show();
+          $(this).siblings('.collapsed').hide();
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      const path = document.querySelector('#wave');
+      const animation = document.querySelector('#moveTheWave');
+      const m = 0.512286623256592433;
+
+      function buildWave(w, h) {
+
+        const a = h / 4;
+        const y = h / 2;
+
+        const pathData = [
+          'M', w * 0, y + a / 2, 
+          'c', 
+            a * m, 0,
+            -(1 - a) * m, -a, 
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a
+        ].join(' ');
+
+        path.setAttribute('d', pathData);
+      }
+
+      buildWave(90, 60);
+    </script>
+
+    <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_setDomainName', '']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+
+  <body>
+    <div class="container row">
+      <header role="banner" class="row">      
+        
+<!-- 
+        <div id="logo">
+          <a href="/"><img src="/assets/logo.svg"></a>
+        </div>
+-->
+        
+        <div class="wave-container">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="30px" viewBox="5 0 80 60">
+              <path id="wave" 
+                fill="none" 
+                stroke="#666" 
+                stroke-width="3"
+                stroke-linecap="round">
+              </path>
+            </svg>
+          </a>
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href='/about'>About</a></li>
+            <li><a href='/design'>Design</a></li>
+            <li><a href='/travel'>Travel</a></li>
+          </ul>
+        </nav>
+
+      </header>
+
+      <main role="main" class="row">
+	<article class="col span_16">
+
+		
+
+			<h1>
+				<a href='/design/writing/words'>Words Matter</a>
+			</h1>
+
+			<blockquote>
+  <p>Words matter. They are abstractions, too—an interface to thought and understanding by communication. The words we use mold our perception of our work and the world around us. They become a frame, just like the interfaces we design.</p>
+</blockquote>
+
+<p>The preceding is pulled from Frank Chimero’s <a href="https://frankchimero.com/blog/2013/what-screens-want/">What Screens Want</a>, a wonderfully crafted essay about design on the web. For designers and, more broadly, visual thinkers, words and language can often feel redundant. After all, we work on canvases, crafting wireframes and compositions for people to see. In a different universe, our work could stand by itself without added explanation.</p>
+
+<p>This of course is not reality. Words matter and they impact our work. They matter the moment a problem is introduced. They are absolutely critical when we present our designs, both internally and externally. And, they matter when we try to shape someone else’s work through feedback. While we may prefer to deliver static images or functioning prototypes—to show versus tell—words cannot be avoided. As the foundation of all communication, words by default are most accessible for they effortlessly travel across all channels from formal presentations to impromptu conversations.</p>
+
+<p>Words are also messy. What is true, what is said, and what is heard are often very different things. This reality deserves consideration when we communicate design. For example, when a project begins, is the problem defined using a shared vocabulary and with enough clarity and specificity? When we present our designs, are we summarizing our many decisions accurately, honestly, and consistently? In the absence of visual support, what words would best convey our design? Is it a dropdown or, more accurately, a mega-menu? Will the element slide into view or grow into view? When we offer critique, is there more to be said than a reactionary “I like it”?</p>
+
+<p>The relationship between design and the words we use to communicate design is one of interdependence, with each enhancing and reinforcing the other. In the same way we take the time to look for better design executions, we must also intentionally look for more nuanced words to describe our work and the problems we want to solve. If not, we risk recycling the same patterns at the cost of innovation.</p>
+
+
+		
+
+	</article>
+</main>
+
+
+
+	<footer class="row">
+	  <a href="../">Design</a>
+	</footer>
+
+
+
+
+
+
+
+    </div>
+  </body>
+</html>

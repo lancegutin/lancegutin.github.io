@@ -7,7 +7,7 @@ tags:
 
 > Words matter. They are abstractions, too—an interface to thought and understanding by communication. The words we use mold our perception of our work and the world around us. They become a frame, just like the interfaces we design.
 
-The preceding is pulled from Frank Chimero's [What Screens Want](http://frankchimero.com/what-screens-want/), a wonderfully crafted essay about design on the web. For designers and, more broadly, visual thinkers, words and language can often feel redundant. After all, we work on canvases, crafting wireframes and compositions for people to see. In a different universe, our work could stand by itself without added explanation.
+The preceding is pulled from Frank Chimero's [What Screens Want](https://frankchimero.com/blog/2013/what-screens-want/), a wonderfully crafted essay about design on the web. For designers and, more broadly, visual thinkers, words and language can often feel redundant. After all, we work on canvases, crafting wireframes and compositions for people to see. In a different universe, our work could stand by itself without added explanation.
 
 This of course is not reality. Words matter and they impact our work. They matter the moment a problem is introduced. They are absolutely critical when we present our designs, both internally and externally. And, they matter when we try to shape someone else's work through feedback. While we may prefer to deliver static images or functioning prototypes—to show versus tell—words cannot be avoided. As the foundation of all communication, words by default are most accessible for they effortlessly travel across all channels from formal presentations to impromptu conversations.
 
