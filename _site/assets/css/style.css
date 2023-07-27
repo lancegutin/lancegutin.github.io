@@ -446,7 +446,7 @@ nav a:link {
   letter-spacing: 2px;
   line-height: 2.5;
   margin: 2px;
-  padding: 0 1.5rem;
+  padding: 0.25rem 1.5rem;
   text-transform: uppercase;
 }
 
@@ -460,7 +460,7 @@ nav a:link {
   letter-spacing: 2px;
   line-height: 2.5;
   margin: 2px;
-  padding: 0 1.5rem;
+  padding: 0.25rem 1.5rem;
   text-transform: uppercase;
 }
 
@@ -526,7 +526,7 @@ nav a:link {
 
 section {
   margin: 0 auto 6rem auto;
-  max-width: 720px;
+  max-width: 960px;
 }
 
 
@@ -559,14 +559,17 @@ dd {
 
 dd h2 {
   margin: 0 auto;
+  max-width: 960px;
 }
 
 dd p {
-  margin-bottom: 0;
+  margin: auto auto 0 auto;
+  max-width: 960px;
 }
 
 dd .description {
   text-align: left;
+  max-width: 960px;
 }
 
 .featured-row, .featured-top-row {
@@ -586,21 +589,21 @@ dd .description {
 .other {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     list-style: none;
     margin: 0;
+    max-width: 960px;
     padding: 0;
 }
 
-.other li:not(:first-child):not(:last-child) {
-  margin: 0 0.5rem;
+.other li:not(:last-child) {
+  margin: 0 2.75rem 0 0;
 }
 
 .writing-date {
   color: #666;
   font-size: 1rem;
   line-height: 1.5;
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -609,7 +612,8 @@ dd .description {
 }
 
 .writing-list p {
-  margin-bottom: 0rem;
+  margin: auto auto 0 auto;
+  max-width: 960px;
 }
 
 #featured a, #other a, #writing a {
@@ -618,16 +622,6 @@ dd .description {
 
 #featured a:hover, #other a:hover, #writing a:hover {
   color: #1769FF;
-}
-
-::-moz-selection, ::selection {
-  background: #1769FF;
-  color: #FFF;
-}
-
-::selection {
-  background: #1769FF;
-  color: #FFF;
 }
 
 @keyframes moveTheWave {
@@ -694,7 +688,7 @@ dd .description {
       flex-flow: column;
   }
 
-  .other li:not(:first-child):not(:last-child) {
+  .other li {
     margin: 0;
   }
 }
