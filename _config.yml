@@ -43,3 +43,5 @@ permalink: pretty
 markdown: kramdown
 analytics_id: UA-17044912-3
 description: Designer
+plugins:
+  - jekyll-redirect-from
