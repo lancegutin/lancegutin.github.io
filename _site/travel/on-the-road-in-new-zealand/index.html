@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Lance Gutin - On the Road in New Zealand</title>
+
+    <meta name='description' content='Designer'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/favicon.png'>
+
+    <link type="application/rss+xml" rel="alternate" title="Lance Gutin" href="">
+
+    <link href="/assets/css/style.css" rel="stylesheet" media="all">
+    <!-- <link rel="stylesheet" href="http://basehold.it/24/666666"> -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700, 400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <script src="/assets/js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.collapsed').click(function(){
+          $(this).siblings('.expand-box').hide();
+          $(this).siblings('.expanded').show();
+          $(this).hide();
+        });
+        $('.expand-box').click(function(){
+          $(this).hide();
+          $(this).siblings('.expanded').show();
+          $(this).siblings('.collapsed').hide();
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      const path = document.querySelector('#wave');
+      const animation = document.querySelector('#moveTheWave');
+      const m = 0.512286623256592433;
+
+      function buildWave(w, h) {
+
+        const a = h / 4;
+        const y = h / 2;
+
+        const pathData = [
+          'M', w * 0, y + a / 2, 
+          'c', 
+            a * m, 0,
+            -(1 - a) * m, -a, 
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a
+        ].join(' ');
+
+        path.setAttribute('d', pathData);
+      }
+
+      buildWave(90, 60);
+    </script>
+
+    <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_setDomainName', '']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+
+  <body>
+    <div class="container row">
+      <header role="banner" class="row">      
+        
+<!-- 
+        <div id="logo">
+          <a href="/"><img src="/assets/logo.svg"></a>
+        </div>
+-->
+        
+        <div class="wave-container">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="30px" viewBox="5 0 80 60">
+              <path id="wave" 
+                fill="none" 
+                stroke="#666" 
+                stroke-width="3"
+                stroke-linecap="round">
+              </path>
+            </svg>
+          </a>
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href='/work'>Work</a></li>
+            <li><a href='/travel'>Travel</a></li>
+            <li><a href='/about'>About</a></li>         
+          </ul>
+        </nav>
+
+      </header>
+
+      <main role="main" class="row">
+	<article class="col span_16">
+
+		
+
+			<h1>
+				<a href='/travel/on-the-road-in-new-zealand/'>On the Road in New Zealand</a>
+			</h1>
+
+			<p>Long-term travel is an active endeavor. It takes energy to go out and genuinely experience a place. At the same time, it’s not all guaranteed to be easy or particularly remarkable. Such was my time on the road in New Zealand.</p>
+
+<p><img src="/uploads/road-to-mount-cook.jpg" alt="Road to Mount Cook" /></p>
+<h4 id="on-the-drive-to-mount-cook">On the drive to Mount Cook</h4>
+<h5 id="lindis-pass-new-zealand">Lindis Pass, New Zealand</h5>
+
+<p>For about 4 weeks, Garrit, Chris, and I traveled by car across much of New Zealand. To keep costs down, we rented a late model Nissan Wingroad wagon and chose to stay at government and freedom (free) campsites. On a few rare occasions, we found secluded spots off the main road. Garrit and I shared an air mattress in the back of the wagon and Chris slept in a single person tent. We acquired cheap camping gear including cooking supplies, foldable chairs, and a portable music player from a discount retailer. Food was purchased at grocery stores every few days and regularly included pasta, rice, and peanut butter. In addition to the day’s main activity — generally, a hike or a tour — much of our time was spent preparing meals, setting up and breaking down camp, and driving.</p>
+
+<p><img src="/uploads/garrit-on-road.jpg" alt="Garrit on the road" /></p>
+<h4 id="stopping-for-a-photo">Stopping for a photo</h4>
+<h5 id="near-inangahua-new-zealand">Near Inangahua, New Zealand</h5>
+
+<p>Life on the road requires a certain frame of mind. How to spend the day and even what food to buy was often a collective decision. Inevitably, there were some activities I chose not to do and some meals that I will not be cooking again.</p>
+
+<p>Because phone reception was almost always spotty, navigating and getting information online became a chore. We made time in towns and cities to find free internet at places like the library or McDonalds. By necessity, however, we focused on the few most important tasks that required a connection and moved on.</p>
+
+<p>For me, even the most basic details of day to day life came into focus. Despite intentionally packing light, simply keeping track of all my belongings proved to be a challenge. Also, spending money with no steady income felt strange and uncomfortable. Both aspects of traveling I’m still trying to get used to.</p>
+
+<p>All of it, of course, is part of the journey. We may focus on the epic experiences, but there are lessons and satisfaction in the tiny adjustments that make life on the road possible.</p>
+
+
+		
+
+	</article>
+</main>
+
+
+
+
+
+	<footer class="row">
+	  <a href="../">Travel</a>
+	</footer>
+
+
+
+
+
+    </div>
+  </body>
+</html>

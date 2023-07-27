@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Lance Gutin - Open to Travel</title>
+
+    <meta name='description' content='Designer'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/favicon.png'>
+
+    <link type="application/rss+xml" rel="alternate" title="Lance Gutin" href="">
+
+    <link href="/assets/css/style.css" rel="stylesheet" media="all">
+    <!-- <link rel="stylesheet" href="http://basehold.it/24/666666"> -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700, 400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <script src="/assets/js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.collapsed').click(function(){
+          $(this).siblings('.expand-box').hide();
+          $(this).siblings('.expanded').show();
+          $(this).hide();
+        });
+        $('.expand-box').click(function(){
+          $(this).hide();
+          $(this).siblings('.expanded').show();
+          $(this).siblings('.collapsed').hide();
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      const path = document.querySelector('#wave');
+      const animation = document.querySelector('#moveTheWave');
+      const m = 0.512286623256592433;
+
+      function buildWave(w, h) {
+
+        const a = h / 4;
+        const y = h / 2;
+
+        const pathData = [
+          'M', w * 0, y + a / 2, 
+          'c', 
+            a * m, 0,
+            -(1 - a) * m, -a, 
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a
+        ].join(' ');
+
+        path.setAttribute('d', pathData);
+      }
+
+      buildWave(90, 60);
+    </script>
+
+    <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_setDomainName', '']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+
+  <body>
+    <div class="container row">
+      <header role="banner" class="row">      
+        
+<!-- 
+        <div id="logo">
+          <a href="/"><img src="/assets/logo.svg"></a>
+        </div>
+-->
+        
+        <div class="wave-container">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="30px" viewBox="5 0 80 60">
+              <path id="wave" 
+                fill="none" 
+                stroke="#666" 
+                stroke-width="3"
+                stroke-linecap="round">
+              </path>
+            </svg>
+          </a>
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href='/work'>Work</a></li>
+            <li><a href='/travel'>Travel</a></li>
+            <li><a href='/about'>About</a></li>         
+          </ul>
+        </nav>
+
+      </header>
+
+      <main role="main" class="row">
+	<article class="col span_16">
+
+		
+
+			<h1>
+				<a href='/travel/open-to-travel/'>Open to Travel</a>
+			</h1>
+
+			<p>Traveling for a year requires a lot of preparation. Finding health insurance, organizing my finances, and deciding what to pack all took me a considerable amount of time and effort. Considering such decisions would impact the entirety of my travels, this research felt justified and comforting. Comparatively, when it came to figuring the specifics of my actual trip, I deliberately chose to plan less.</p>
+
+<p>Sure, I had a general outline of countries and spots to hit throughout New Zealand, but they were just rough ideas. I wanted flexibility. I wanted to be open to my surroundings — to the people and places around me — and go where I felt was right. I loved the idea of happening upon situations I could not predict and being pressed by necessity to make my own opportunities. What this would mean in reality I didn’t really know.</p>
+
+<p>I booked a one-way ticket to Auckland (with a flight to Sydney two months later per onward travel rules) and the first few nights in a hostel. At some point, I wanted to WWOOF in New Zealand so I considered doing that soon after I arrived. I also wanted to find a travel partner and I hoped maybe I’d meet someone in my hostel. But, these were just possibilities in my head. I was open to different plans, even if the uncertainty of it all was a bit uncomfortable.</p>
+
+<p>As it happened, on my final connection from Fiji to Auckland, I was seated directly next to Garrit, a German who was also traveling alone and had about 6 weeks in New Zealand before heading to Beijing. We talked for most of the 3 hour flight, sharing our stories along with our ideas for seeing the country. We swapped phone numbers and agreed to meet up in the city soon.</p>
+
+<p>By the time we parted ways, Garrit and I ended up spending just over a month together. We rented a Nissan Wingroad wagon, twice, added another German, Chris, and saw so much of New Zealand. When I started talking to Garrit on the plane that day, I didn’t know how everything was going to work out. But, I was open. I was open to a fleeting conversation, and I also was open to building a friendship and traveling together.</p>
+
+<p>Essentially, I think this is what travel is all about. To get the most out of travel, we can’t rigorously plan every detail. Instead, we must be guided by a basic curiosity, an openness that allows us to react to our surroundings and follow our intuition.</p>
+
+
+		
+
+	</article>
+</main>
+
+
+
+
+
+	<footer class="row">
+	  <a href="../">Travel</a>
+	</footer>
+
+
+
+
+
+    </div>
+  </body>
+</html>

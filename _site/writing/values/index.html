@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Lance Gutin - Naming My Tech Values</title>
+
+    <meta name='description' content='Designer'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/favicon.png'>
+
+    <link type="application/rss+xml" rel="alternate" title="Lance Gutin" href="">
+
+    <link href="/assets/css/style.css" rel="stylesheet" media="all">
+    <!-- <link rel="stylesheet" href="http://basehold.it/24/666666"> -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700, 400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <script src="/assets/js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.collapsed').click(function(){
+          $(this).siblings('.expand-box').hide();
+          $(this).siblings('.expanded').show();
+          $(this).hide();
+        });
+        $('.expand-box').click(function(){
+          $(this).hide();
+          $(this).siblings('.expanded').show();
+          $(this).siblings('.collapsed').hide();
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      const path = document.querySelector('#wave');
+      const animation = document.querySelector('#moveTheWave');
+      const m = 0.512286623256592433;
+
+      function buildWave(w, h) {
+
+        const a = h / 4;
+        const y = h / 2;
+
+        const pathData = [
+          'M', w * 0, y + a / 2, 
+          'c', 
+            a * m, 0,
+            -(1 - a) * m, -a, 
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a
+        ].join(' ');
+
+        path.setAttribute('d', pathData);
+      }
+
+      buildWave(90, 60);
+    </script>
+
+    <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_setDomainName', '']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+
+  <body>
+    <div class="container row">
+      <header role="banner" class="row">      
+        
+<!-- 
+        <div id="logo">
+          <a href="/"><img src="/assets/logo.svg"></a>
+        </div>
+-->
+        
+        <div class="wave-container">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="30px" viewBox="5 0 80 60">
+              <path id="wave" 
+                fill="none" 
+                stroke="#666" 
+                stroke-width="3"
+                stroke-linecap="round">
+              </path>
+            </svg>
+          </a>
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href='/work'>Work</a></li>
+            <li><a href='/travel'>Travel</a></li>
+            <li><a href='/about'>About</a></li>         
+          </ul>
+        </nav>
+
+      </header>
+
+      <main role="main" class="row">
+	<article class="col span_16">
+
+		
+
+			<h1>
+				<a href='/writing/values/'>Naming My Tech Values</a>
+			</h1>
+
+			<p>When you think about technology, what matters to you? Not to your company, or to the industry, and certainly not to the media. But to you, as an individual who works and builds on the web—what do you value?</p>
+
+<p>In its current state, the web is overflowing with ideas. Everyone has a voice and the collective conversation is loud, noisy, and often conflicting. Filtering it, identifying the ideas worth believing, is the ultimate challenge. For me, doing so requires naming what I value and what I don’t.</p>
+
+<p>Here’s my working list, starting with what I try to ignore.</p>
+
+<h2 id="speed"><del>Speed</del></h2>
+
+<p>Technology and the people who work with it are not the same. The faster my computer processes or information travels, the more I recognize there is a limit to how fast I can think or work. Startups and the software they build may optimize for speed, but individually I prefer the ideas that take time and last.</p>
+
+<h2 id="volume"><del>Volume</del></h2>
+
+<p>We accumulate so much online—friends, followers, content. But rarely do we ever do the opposite. Our tendency to count everything can lead us to believe that more is the goal. It’s not. We don’t need more websites, more apps, more distractions. We need richer, more meaningful experiences.</p>
+
+<h2 id="novelty"><del>Novelty</del></h2>
+
+<p>My brain loves novelty. This is why I open Twitter multiple times a day. But the more I find new stuff to read or share, the more I realize that most of it simply isn’t significant in the long run. The same is true of software. I once considered myself an early adopter. But, being the first to try new software doesn’t correlate to my skill or effectiveness as a UX designer. If it’s important, whether it’s software, news, or ideas, I trust that it will reach me eventually.</p>
+
+<hr />
+
+<h2 id="experimentation">Experimentation</h2>
+
+<p>While being on the bleeding edge of technology feels like a waste of effort to me, I do care about experimentation. I do want to learn, and I do want to try different approaches to my work. The web would be a boring place of sameness without the courage to do something different. There will always be multiple ways to design a website, and the more I question accepted patterns the more capable I become.</p>
+
+<h2 id="context">Context</h2>
+
+<p>The volume and accessibility of information online can lead us to believe the solution to any problem is a Google search away. But, what works in one situation is not guaranteed to work in another. Every context is different and every context uniquely shapes our work. When context is ignored, we are left with templatized experiences that fall short of their potential and overgeneralized ideas that fall apart when applied.</p>
+
+<h2 id="people">People</h2>
+
+<p>Ultimately, technology exists because of people. Real people joined together to build the technology we use every day. And real people will experience the technology we are working on now. Technology then is not the end but rather the means to positively affect the lives of real people. Everything else is relative to this.</p>
+
+
+		
+
+	</article>
+</main>
+
+
+
+	<footer class="row">
+	  <a href="../">Writing</a>
+	</footer>
+
+
+
+
+
+
+
+    </div>
+  </body>
+</html>

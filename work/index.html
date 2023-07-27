@@ -5,108 +5,83 @@ layout: default
 
 <main role="main" class="row">
 
-  
-  <div class="index">
-    <div class="title">
-      <h1 class="center">
-        <a href="adp.pdf">ADP</a>
-      </h1>
-      <div class="description">
-        Senior UX Designer
-      </div>
-    </div>
-
-    <div class="index">
-      <p class="center">
-        Designing a unified and extensible system for payroll. 
-      </p>
-      <div class="description">
-        <a href="adp.pdf">See Case Study</a>
-      </div>
-    </div>
-
-<hr class="alt" />
-
-  <div class="index">
-    <div class="title">
-      <h1 class="center">
-        <a href="urbanstems/case-study">UrbanStems</a>
-      </h1>
-      <div class="description">
-        Product Designer
-      </div>
-    </div>
-
-    <div class="index">
-      <p class="center">
-        Creating a flower subscription service and establishing a new revenue stream in the process.
-      </p>
-      <div class="description">
-        <a href="urbanstems/case-study">See Case Study</a>
-      </div>
-    </div>
-
-    <div>
-      <p class="center">
-        Prototyping a new storefront search and filter experience.
-      </p>
-      <div class="description">
-        <a href="urbanstems/concept">See Concept</a>
-      </div>
-    <div>
-  </div>
-
-<hr class="alt" />
-
-<div class="secondary-index">
-  <div class="description">
-    Client Work
-  </div>
-</div>
-
-{% for work in site.pages reversed %}
- {% if work.path contains 'work' and work.title != 'Work' %}
-  {% if work.title != 'UrbanStems' and work.title != 'ADP' %}
-
-    <div class="index">
-      <h1 class="center">
-        <a href='{{ work.url }}'>{{ work.title }}</a>
-      </h1>
-      <div class="description">
-        {{ work.description }}
-      </div>
-    </div>
-
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
-
-<!--
-  {% for work in site.work %}
-    {% if work.page.index != 'secondary' %}
-
-      <div class="work-index">
-        <h1>
-            <a href='{{ work.url }}'>{{ work.title }}</a>
-          </h1>
+  <section id="featured">
+    <dl>
+      <div class="featured-top-row">
+          <a href="shopify/">
+            <dt>
+              <img src="/assets/shopify.svg">
+            </dt>
+          </a>
+        <dd>
+          <h2>
+            <a href="shopify/">Shopify</a>
+          </h2>
+          <div class="description">
+            Senior Product Designer
+          </div>
+          <p>
+            Optimizing reviews for speed and accountability.
+          </p>
+        </dd>
       </div>
 
-    {% endif %}
-  {% endfor %}
+      <div class="featured-row">
+        <a href="adp.pdf">
+          <dt>
+            <img src="/assets/adp.svg">
+          </dt>
+        </a>
+        <dd>
+          <h2>
+            <a href="adp.pdf">ADP</a>
+          </h2>
+          <div class="description">
+            Senior UX Designer
+          </div>
+          <p>
+            Designing a unified and extensible system for payroll.
+          </p>
+        </dd>
+      </div>
+    </dl>
+  </section>
 
-  <hr class="alt" />
-  <div class="secondary-index">
+  <section id="other">
+    <div class="label">Earlier Work</div>
+    <ul class="other">
 
-  {% for work in site.work %}
-    {% if work.page.index == 'secondary' %}
+      <li>
+        <a href="urbanstems/case-study/">UrbanStems</a>
+      </li>
+      <li>
+        <a href="sandc/">S&C Electric Company</a>
+      </li>
+      <li>
+        <a href="militello/">Militello Capital</a>
+      </li>
+      <li>
+        <a href="medeanalytics/">MedeAnalytics</a>
+      </li>
 
-    <h3><a href='{{ work.url }}'>{{ work.title }}</a></h3>
+  </ul>
+  </section>
 
-    {% endif %}
-  {% endfor %}
+  <section id="writing">
+    <div class="label">Design Writing</div>
 
-  </div>
--->
+    {% for article in site.writing reversed %}
+      <div class="writing-list">
+        <p>
+          <a href='{{ article.url }}'>{{ article.title }}</a>
+        </p>
+        <div class="writing-date">
+          {{ article.date | date: "%b %-d, %Y" }}
+        </div>
+      </div>
+    {% endfor %}
+
+
+  </section>
 
 </main>

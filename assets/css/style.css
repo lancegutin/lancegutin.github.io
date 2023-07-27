@@ -256,9 +256,9 @@ sub {
 
 .secondary-index .description {
   font-family: 'Varela Round', sans-serif;
-  color: #ccc;
-  font-size: 14px;
-  line-height: 2.5rem;
+  color: #CCC;
+  font-size: 12px;
+  line-height: 2.5;
   letter-spacing: 2px;
   text-transform: uppercase;
   max-width: 720px;
@@ -289,7 +289,7 @@ footer {
 footer a {
   font-family: 'Varela Round', sans-serif;
   color: #1769FF;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 3.5;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -326,12 +326,15 @@ svg {
 }
 
 nav {
-  font-family: 'Varela Round', sans-serif;
   color: #1769FF;
+  display: flex;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 12px;
+  justify-content: center;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  max-width: 30rem;
   margin: 0 auto 3rem auto;
+  max-width: 25rem;
+  text-transform: uppercase;
 }
 
 nav ul {
@@ -341,18 +344,16 @@ nav ul {
   overflow: hidden;
 }
 
-
 nav ul li {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   text-align: center;
-  width: 25%;
+  width: 33%;
   list-style-type: none;
   float: left;
   margin-right: 0;
   display: block;
 }
-
 
 nav a:link {
   text-decoration: none;
@@ -380,15 +381,15 @@ nav a:link {
 }
 
 .date {
-  font-family: 'Varela Round', sans-serif;
   color: #666;
-  font-size: 14px;
-  line-height: 2.5rem;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 12px;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  max-width: 720px;
+  line-height: 2.5;
   margin: 0 auto;
+  max-width: 720px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .index-date {
@@ -403,27 +404,71 @@ nav a:link {
   margin-bottom: 9rem
 }
 
-.description {
+.description, .label {
   font-family: 'Varela Round', sans-serif;
   color: #666;
-  font-size: 14px;
-  line-height: 2.5rem;
+  font-size: 12px;
+  line-height: 2.5;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.description {
   max-width: 720px;
   text-align: center;
-  margin: 0 auto;
 }
 
 .title {
   margin: 0 auto 3rem auto;
 }
 
+.control-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.control {
+  background-color: #EFEFEF;
+  border-radius: 8px;
+  display: inline-flex;
+}
+
+.active {
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 6px;
+  color: #666;
+  display: flex;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 2.5;
+  margin: 2px;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+}
+
+.inactive {
+  align-items: center;
+  border-radius: 6px;
+  color: #1769FF;
+  display: flex;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 2.5;
+  margin: 2px;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+}
+
 .about {
   font-family: 'Varela Round', sans-serif;
   color: #666;
-  font-size: 14px;
-  line-height: 2.5rem;
+  font-size: 12px;
+  line-height: 2.5;
   letter-spacing: 2px;
   text-transform: uppercase;
   max-width: 720px;
@@ -446,7 +491,7 @@ nav a:link {
   font-family: 'Varela Round', sans-serif;
   color: #FFF;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2.5;
   text-transform: uppercase;
   background-color: #333;
@@ -479,14 +524,110 @@ nav a:link {
   max-width: 460px;
 }
 
+section {
+  margin: 0 auto 6rem auto;
+  max-width: 720px;
+}
+
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+dt {
+  align-items: center;
+  background-color: #333;
+  border-radius: 8px;
+  display: flex;
+  margin: 0 2.5rem 0 0;
+  max-height: 124.5px;
+  padding: 2rem;
+  width: 12rem;
+}
+
+dt img {
+  height: 32px;
+  margin-bottom: 0;
+  width: 8rem;
+}
+
+dd {
+  flex: 1 1 auto;
+}
+
+dd h2 {
+  margin: 0 auto;
+}
+
+dd p {
+  margin-bottom: 0;
+}
+
+dd .description {
+  text-align: left;
+}
+
+.featured-row, .featured-top-row {
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0;
+}
+
+.featured-row a, .featured-top-row a {
+  display: flex;
+}
+
+.featured-top-row {
+  margin-bottom: 4rem;
+}
+
+.other {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.other li:not(:first-child):not(:last-child) {
+  margin: 0 0.5rem;
+}
+
+.writing-date {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.writing-list {
+  margin-bottom: 2rem;
+}
+
+.writing-list p {
+  margin-bottom: 0rem;
+}
+
+#featured a, #other a, #writing a {
+  color: #333
+}
+
+#featured a:hover, #other a:hover, #writing a:hover {
+  color: #1769FF;
+}
+
 ::-moz-selection, ::selection {
   background: #1769FF;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 ::selection {
   background: #1769FF;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 @keyframes moveTheWave {
@@ -519,6 +660,13 @@ nav a:link {
     display: inline-block;
   }
 
+  dt img {
+    height: 32px;
+    margin-bottom: 0;
+    width: 8rem;
+  }
+
+
   .container {
     padding: 0 20px;
   }
@@ -540,6 +688,14 @@ nav a:link {
 
   .container {
     padding: 0 20px;
+  }
+
+  .other {
+      flex-flow: column;
+  }
+
+  .other li:not(:first-child):not(:last-child) {
+    margin: 0;
   }
 }
 
@@ -580,5 +736,9 @@ nav a:link {
 
   .container {
     padding: 0 20px;
+  }
+
+  dt {
+    display: none;
   }
 }

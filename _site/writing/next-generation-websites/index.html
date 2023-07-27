@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Lance Gutin - The Risks & Rewards of Building Next Generation Websites</title>
+
+    <meta name='description' content='Designer'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/favicon.png'>
+
+    <link type="application/rss+xml" rel="alternate" title="Lance Gutin" href="">
+
+    <link href="/assets/css/style.css" rel="stylesheet" media="all">
+    <!-- <link rel="stylesheet" href="http://basehold.it/24/666666"> -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700, 400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <script src="/assets/js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.collapsed').click(function(){
+          $(this).siblings('.expand-box').hide();
+          $(this).siblings('.expanded').show();
+          $(this).hide();
+        });
+        $('.expand-box').click(function(){
+          $(this).hide();
+          $(this).siblings('.expanded').show();
+          $(this).siblings('.collapsed').hide();
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      const path = document.querySelector('#wave');
+      const animation = document.querySelector('#moveTheWave');
+      const m = 0.512286623256592433;
+
+      function buildWave(w, h) {
+
+        const a = h / 4;
+        const y = h / 2;
+
+        const pathData = [
+          'M', w * 0, y + a / 2, 
+          'c', 
+            a * m, 0,
+            -(1 - a) * m, -a, 
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a,
+          's', 
+            -(1 - a) * m, a,
+            a, a,
+          's', 
+            -(1 - a) * m, -a,
+            a, -a
+        ].join(' ');
+
+        path.setAttribute('d', pathData);
+      }
+
+      buildWave(90, 60);
+    </script>
+
+    <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_setDomainName', '']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+
+  <body>
+    <div class="container row">
+      <header role="banner" class="row">      
+        
+<!-- 
+        <div id="logo">
+          <a href="/"><img src="/assets/logo.svg"></a>
+        </div>
+-->
+        
+        <div class="wave-container">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="30px" viewBox="5 0 80 60">
+              <path id="wave" 
+                fill="none" 
+                stroke="#666" 
+                stroke-width="3"
+                stroke-linecap="round">
+              </path>
+            </svg>
+          </a>
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href='/work'>Work</a></li>
+            <li><a href='/travel'>Travel</a></li>
+            <li><a href='/about'>About</a></li>         
+          </ul>
+        </nav>
+
+      </header>
+
+      <main role="main" class="row">
+	<article class="col span_16">
+
+		
+
+			<h1>
+				<a href='/writing/next-generation-websites/'>The Risks & Rewards of Building Next Generation Websites</a>
+			</h1>
+
+			<p>Here at Viget, we try very hard to stay current on everything web. In many cases, this can mean simply executing or updating our view of industry best practices in UX, Design, and Development. In other, more exciting instances, it can mean testing not only the limits of technology, but of ourselves as creative professionals.</p>
+
+<p>In recent weeks, the super cool <a href="http://blacknegative.com/">blacknegative.com</a> has made its rounds in the office. (If you haven’t seen it, grab your headphones and jump there now. You’re in for a treat.) In a very general sense, <a href="http://blacknegative.com/">blacknegative.com</a> is some inspiring stuff, an emotive experience that illustrates what’s possible and what the future of the web can look like. In my mind, it belongs to an emerging class of websites—like space.angrybirds.com, <a href="http://nikebetterworld.com/">nikebetterworld.com</a> and our own <a href="http://teamviget.com/">teamviget.com</a>—that rethink many of the traditional web patterns, introducing uncommon interactions, motion, and design.</p>
+
+<p>While I personally love these executions, it’s important for me as a UX designer to honestly evaluate the implications and appropriateness of these super interactive websites as they become more common.</p>
+
+<h2 id="risks">Risks</h2>
+
+<p>Let’s first enumerate a few significant reasons why as of June 2012 a website like <a href="http://blacknegative.com/">blacknegative.com</a> is simply not worth it for both clients and web professionals.</p>
+
+<p>Evolving Technologies  - The easy argument is that <a href="http://html5please.com/" title="HTML5 and CSS3 browser compatibility overview">the technologies (specifically, aspects of HTML5 and CSS3) are simply less than mature</a>. Browser support of that awesome transition is not guaranteed, and execution and speed are inconsistent.</p>
+
+<p>Fractured Interfaces - The most touted advantage of HTML5 and CSS3 over its Flash predecessor is the cross-device support. However, because there are fundamental differences between touch and click interactions, a super immersive design on the desktop will most likely not translate directly to mobile. Independent of interface, destroying traditional patterns of interaction can also be frustrating and disorientating to the most savvy of users.</p>
+
+<p>Oh, and did I mention, building stuff like this isn’t trivial?</p>
+
+<h2 id="rewards">Rewards</h2>
+
+<p>But, should you surmount these issues, what do you stand to gain?</p>
+
+<p>Impact - Far and away, the greatest benefit is the shock and awe or emotional response an experience like this can have. Done correctly, words like “innovative,” “cool,” and “different” immediately become associated with your content and name. For this reason, at this stage in the game, super interactive websites are best for marketing purposes as opposed to complex applications.</p>
+
+<p>Opportunity to Grow - From a builder’s perspective, there’s immense opportunity; opportunity to explore next level concepts, advance skill sets, and simply do really progressive and challenging work. Tackling projects like this also require teams of designers and developers to deconstruct their responsibilities and collaborate more deeply.</p>
+
+<h2 id="verdict">Verdict</h2>
+
+<p>Obviously, it’s up to all parties involved to decide if a highly interactive, next generation website is appropriate. At a minimum, understanding the implications will make for an informed decision. And, given all of this, time will tell if these types of implementations are adopted on a much larger scale.</p>
+
+
+		
+
+	</article>
+</main>
+
+
+
+	<footer class="row">
+	  <a href="../">Writing</a>
+	</footer>
+
+
+
+
+
+
+
+    </div>
+  </body>
+</html>
