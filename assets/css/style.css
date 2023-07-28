@@ -583,7 +583,7 @@ dd .description {
 }
 
 .featured-top-row {
-  margin-bottom: 4rem;
+  margin: auto auto 6rem auto;
 }
 
 .other {
