@@ -3,7 +3,7 @@ assets/adp*
 _site/design/adp-full/
 _site/assets/adp*
 
-design/shopify-full.html
-assets/shopify*
-_site/design/shopify-full/
-_site/assets/shopify*
+# design/shopify-full.html
+# assets/shopify*
+# _site/design/shopify-full/
+# _site/assets/shopify*

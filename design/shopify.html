@@ -13,12 +13,98 @@ layout: default
 			<h1 class="center">{{ page.title }}</h1>
 			<div class="description">{{ page.description }}</div>
 		</div>
-		<p class="center">
-			Please <a href="mailto:hi@lancegutin.com?subject=Portfolio%20request&body=Lance%2C%20%0A%0AI%20want%20to%20see%20your%20latest%20design%20work%21%20%0A%0ACheers%2C">get in touch</a> to see my latest design work.
+		<img src="/assets/shopify-banner.png" alt="xxx">
+		<p>
+			Shopify uses a custom project management and knowledge base tool called the Vault. All project work is tracked across four stages from <em>Proposal</em> to <em>Prototype</em> to <em>Build</em> and finally to <em>Release</em>. For a project to advance, it must be reviewed and approved by appropriate leaders within the company.
 		</p>
-	</div>
-</main>
-
+		<h2>A tool that can't keep up</h2>
+		<p>
+			While effective as a single repository of project information, the Vault struggled as a tool for alignment.
+		</p>
+		<p>
+			<strong>In short, project reviews by company leaders took too long.</strong>
+		</p>
+		<p>
+			Rather than wait, teams often moved forward without critical feedback, risking valuable time and effort should their work not align with leadership's strategic vision.
+		</p>
+		<p>
+			As the lead designer on the Vault, I partnered with a team of 6 engineers over the course of 2 months to investigate this problem and redesign the project review process as a whole.
+		</p>
+		<h2>An opaque system</h2>
+		<p>
+			To get a more nuanced sense of what was hurting the review process, I interviewed 14 company leaders in 10 days. In these remote moderated sessions, I asked opened-ended questions to collect broad feedback in addition to showing specific pages to assess usability. I summarized my findings into 3 main areas of frustration.
+		</p>
+		<p>
+			<strong>Workflow</strong><br />
+			Reviewers needed a more discrete way to request changes; a simple yes or no wasn't adequate.
+		</p>
+		<p>
+			<strong>Awareness</strong><br />
+			Reviewers often questioned if the right people saw the project.
+		</p>
+		<p>
+			<strong>Speed</strong><br />
+			Reviewers couldn't say for sure as to why reviews took so long.
+		</p>
+		<h2>Optimizing for speed and accountability</h2>
+		<p>
+			Our goals reflected a focus on minimizing the time it took for projects to be reviewed and transitioned from one phase to the next.
+		</p>
+		<ul>
+			<li>Decrease time between review open and closed to 7 days</li>
+			<li>Decrease reviewer response time to 4 days</li>
+			<li>Increase reviewer response rate to 95%</li>
+		</ul>
+		<h2>Designing quickly</h2>
+		<p>
+			At the outset, the most obvious change to the review experience was to add a third option for reviewers to <em>Request changes</em>. This would discretely put accountability back on project champions and make it clear that the review needed revisions before moving forward.
+		</p>
+		<p>
+			In terms of domain model, our team lead proposed a system that largely removed automatic reviewer assignments. Instead, project champions and other reviewers should be able to add and remove anyone at the company to review projects. This would promote accountability; all assigned reviewers were expected to take action or be removed.
+		</p>
+		<p>
+			Anchored by these changes, I explored several different ideas. With speed a priority and without a robust design system, I worked in wireframes.
+		</p>
+		<div class="image-set">
+			<div>
+				<img src="/assets/shopify-wireframe-v1.png" alt="Initial review wireframe">
+				<h4>Initial wireframe with additional radio buttons and review timeline.</h4>
+			</div>
+			<div>
+				<img src="/assets/shopify-wireframe-v2.png" alt="Follow up review wireframe">
+				<h4>Follow up wireframe with list of reviewers and tabs for jumping to page sections.</h4>
+			</div>
+		</div>
+		<h2>A single timeline</h2>
+		<p>
+			From a design perspective, one of the primary drawbacks of the current experience stemmed from the scattering of important actions. Reviewers had to interact with one area to review the project, another area to comment, and still other areas to pause and pre-approve. Interpreting everything and taking action required excessive jumping and cognitive load.
+		</p>
+		<p>
+			Based on conversations with other designers and our team lead, I pursued a single timeline of events.
+		</p>
+		<img src="/assets/shopify-leave-feedback.png" alt="Final review design">
+		<h4>Final design that pairs a single review timeline and feedback box with an editable list of reviewers.</h4>
+		<p>
+			In the new design, reviewers can read through a consolidated history of feedback and events before leaving their own feedback. All related actions are combined into one box.
+		</p>
+		<p>
+			In terms of accountability, the right rail prominently displays the status of the review and the reviewers assigned. Should a reviewer not be included in the review, they can easily be removed, skipping the timeline content entirely.
+		</p>
+		<p>
+			Resource links are pulled out for reviewers looking to dig deeper into specific deliverables. In my interviews, several reviewers expressed dismay that they had to hunt for this information.
+		</p>
+		<p>
+		<img src="/assets/shopify-form-states.png" alt="Feedback box form states">
+		<h4>Senior company leaders known as OK2 Reviewers are able to approve projects through multiple phases and advance projects immediately with a <em>Force approve</em>.</h4>
+		<p>
+			Because actions within the feedback box are role dependent, I made sure to design each state, suggesting specific helper text to clarify each action.
+		</p>
+		<img src="/assets/shopify-open-review.png" alt="Open review design">
+		<h4>When opening a review, project champions are free to add any number of reviewers and project resources.</h4>
+		<p>
+			Within a week of launch, metrics showed clear improvement in review speed.
+		</p>
+		<img src="/assets/shopify-metrics.png" alt="Review metrics">
 <footer class="row">
   <a href="../">Design</a>
 </footer>

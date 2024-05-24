@@ -533,7 +533,6 @@ section {
 dl {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 dt {
@@ -624,6 +623,76 @@ dd .description {
   color: #1769FF;
 }
 
+.preview {
+  border-radius: 16px;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.08);
+  color: #333;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto auto 4rem auto;
+  max-width: 840px;
+  padding: 3rem 3rem 0 3rem;
+  position: relative;
+}
+
+.preview a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.preview:hover h2 a {
+  color: #1769FF;
+}
+
+.project {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 2rem 0 0;
+  width: 50%;
+}
+
+.cta {
+  font-family: 'Varela Round', sans-serif;
+  color: #1769FF;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: auto 0 3rem 0;
+}
+
+.cta a {
+  color: #1769FF;
+}
+
+.inactive-cta {
+  color: #999;
+}
+
+.preview h2 {
+  margin: 0 0 1rem 0;
+}
+
+
+.preview p {
+  margin: 0 0 1rem 0;
+}
+
+.thumbnail {
+  width: 50%;
+}
+
+.thumbnail img {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
 @keyframes moveTheWave {
   0% { 
     stroke-dashoffset: 0; 
@@ -672,6 +741,18 @@ dd .description {
   .image-set h4 {
     max-width: 100%;
   }
+
+  .preview {
+    padding: 2.5rem 2.5rem 0 2.5rem;
+  }
+
+  .preview h2 {
+    font-size: 2rem;
+  }
+
+  .preview p {
+    font-size: 18px;
+  }
 }
 
 @media ( max-width : 720px ) {
@@ -690,6 +771,19 @@ dd .description {
 
   .other li {
     margin: 0;
+  }
+
+  .project {
+    padding: 0;
+    width: 100%;
+  }
+
+  .preview p {
+    margin: 0 0 2rem 0;
+  }
+
+  .thumbnail {
+    display: none;
   }
 }
 
@@ -734,5 +828,9 @@ dd .description {
 
   dt {
     display: none;
+  }
+
+  .preview {
+    margin: auto auto 3rem auto;
   }
 }
