@@ -3,6 +3,9 @@ assets/adp*
 _site/design/adp-full/
 _site/assets/adp*
 
+!assets/adp-preview.png
+!_site/assets/adp-preview.png
+
 # design/shopify-full.html
 # assets/shopify*
 # _site/design/shopify-full/

@@ -645,9 +645,9 @@ dd .description {
   left: 0px;
 }
 
-.preview:hover h2 a {
+/*.preview:hover h2 a {
   color: #1769FF;
-}
+}*/
 
 .project {
   display: flex;
