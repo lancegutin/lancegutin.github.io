@@ -524,6 +524,40 @@ nav a:link {
   max-width: 460px;
 }
 
+.full-width-image {
+  background-color: #F5F8FA;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  margin-bottom: 3rem;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: none;
+  position: relative;
+  width: 100vw;
+}
+
+.full-width-image img {
+  margin: 3rem 0;
+}
+
+.full-width-image-transparent {
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  margin-bottom: 3rem;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: none;
+  position: relative;
+  width: 100vw;
+}
+
+.full-width-image-transparent img {
+  margin: 0;
+  max-width: 1013.3333px;
+}
+
 section {
   margin: 0 auto 6rem auto;
   max-width: 960px;
@@ -693,6 +727,10 @@ dd .description {
   width: 100%;
 }
 
+.tight-caption {
+  margin-top: -3rem;
+}
+
 @keyframes moveTheWave {
   0% { 
     stroke-dashoffset: 0; 
@@ -740,6 +778,14 @@ dd .description {
 
   .image-set h4 {
     max-width: 100%;
+  }
+
+  .full-width-image img {
+    padding: 0 20px;
+  }
+
+  .full-width-image-transparent img {
+    padding: 0 13.3333px;
   }
 
   .preview {
