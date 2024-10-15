@@ -359,10 +359,10 @@ nav a:link {
   text-decoration: none;
 }
 
-/*.inset-row {
+.inset-row {
   display: flex;
   justify-content: center;
-}*/
+}
 
 .first-square {
   margin: 0 4.1666667% 4.1666667% 0;
