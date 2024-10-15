@@ -327,18 +327,18 @@ svg {
 
 nav {
   color: #1769FF;
-  display: flex;
+/*  display: flex;*/
   font-family: 'Varela Round', sans-serif;
   font-size: 12px;
-  justify-content: center;
+/*  justify-content: center;*/
   letter-spacing: 2px;
   margin: 0 auto 3rem auto;
-  max-width: 25rem;
+/*  max-width: 25rem;*/
   text-transform: uppercase;
 }
 
 nav ul {
-  width: 100%;
+  min-width: 25rem;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -357,6 +357,11 @@ nav ul li {
 
 nav a:link {
   text-decoration: none;
+}
+
+.inset-row {
+  display: flex;
+  justify-content: center;
 }
 
 .first-square {
