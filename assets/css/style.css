@@ -327,10 +327,10 @@ svg {
 
 nav {
   color: #1769FF;
-  display: flex;
+/*  display: flex;*/
   font-family: 'Varela Round', sans-serif;
   font-size: 12px;
-  justify-content: center;
+/*  justify-content: center;*/
   letter-spacing: 2px;
   margin: 0 auto 3rem auto;
   max-width: 25rem;
