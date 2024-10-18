@@ -3,8 +3,15 @@ assets/adp*
 _site/design/adp-full/
 _site/assets/adp*
 
+design/robinhood.html
+assets/robinhood*
+_site/design/robinhood/
+_site/assets/robinhood*
+
 !assets/adp-preview.png
 !_site/assets/adp-preview.png
+!assets/robinhood-preview.png
+!_site/assets/robinhood-preview.png
 
 # design/shopify-full.html
 # assets/shopify*
